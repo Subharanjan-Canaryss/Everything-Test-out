@@ -26,5 +26,7 @@ jobs:
   # This will NOT work.  These two `run` steps are written
   # as different scripts and run by different shells, so
   # the `FOO` variable will NOT persist between them.
-    - run: export FOO=bar
+    - run: |
+       export FOO=bar
+       echo "::set-env name=FOO::$FOO"
     - run: echo $FOO
