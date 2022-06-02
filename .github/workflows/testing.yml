@@ -28,5 +28,5 @@ jobs:
   # the `FOO` variable will NOT persist between them.
     - run: |
        export FOO=bar
-       echo "::set-env name=FOO::$FOO"
+       echo "::set-env name=true"
     - run: echo $FOO
