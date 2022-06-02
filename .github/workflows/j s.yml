@@ -1,4 +1,4 @@
-name: GH-Actions-job-Summaries
+name: GHS
 
 on:
   workflow_dispatch
