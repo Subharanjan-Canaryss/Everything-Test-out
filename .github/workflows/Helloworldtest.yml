@@ -1,0 +1,23 @@
+name: Hello-World-Actions
+on:
+  push:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+ 
+  say_hello:
+
+    runs-on: ubuntu-latest
+
+    steps:
+     
+      - name: Say Hello
+        run: echo Hello World!
+   
+      - name: Say Goodbye
+        run: |
+          echo Job Finished.
+          echo When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
+          $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
